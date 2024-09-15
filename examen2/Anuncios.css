@@ -1,0 +1,135 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+.header {
+    background-color: #444;
+    padding: 1rem 0;
+}
+
+.header img {
+    height: 50px;
+}
+
+.navegacion a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion {
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff0; /* Color amarillo */
+}
+
+.contenedor-anuncios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.anuncio {
+    background-color: #222; /* Fondo de los anuncios */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.anuncio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-anuncio {
+    padding: 1.5rem;
+}
+
+.contenido-anuncio h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffb100;
+}
+
+.contenido-anuncio p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+    align-items: center;
+}
+
+.iconos-caracteristicas img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.boton-amarillo-block {
+    background-color: #ffb100;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.7rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.boton-amarillo-block:hover {
+    background-color: #ff9000;
+    color: #fff;
+}
+
+.footer {
+    background-color: #444;
+    padding: 2rem 0;
+}
+
+.footer .navegacion a {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,140 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #333; /* Fondo oscuro */
+}
+
+/* Encabezado */
+.header {
+    background-color: #1d1d1d;
+    padding: 20px 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra img {
+    max-width: 150px; /* Ajustar tamaño del logo */
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    color: #f0efec;
+}
+
+/* Ícono de luna (modo oscuro) */
+.dark-mode-boton {
+    width: 30px; /* Tamaño del ícono */
+    cursor: pointer;
+}
+
+/* Estilos de las secciones */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.seccion {
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Color del título */
+}
+
+/* Estilos para la sección "Conoce sobre Nosotros" */
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.contenido-nosotros .imagen img {
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.texto-nosotros blockquote {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.texto-nosotros p {
+    line-height: 1.8;
+    color: #cccccc; /* Texto más claro */
+}
+
+/* Estilos para la sección de iconos */
+.iconos-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.icono img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.icono h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.icono p {
+    color: #cccccc;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #1d1d1d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navegacion a:hover {
+    color: #bbab7500;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #cccccc;
+}
+
+/* Adaptaciones responsivas */
+@media (max-width: 768px) {
+    .contenido-nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .iconos-nosotros {
+        grid-template-columns: 1fr;
+    }
+}

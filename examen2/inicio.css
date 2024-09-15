@@ -1,0 +1,314 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background: url('https://66e1071ef292f5740db2cacd--vocal-meringue-726935.netlify.app/build/img/header.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f90;
+}
+
+/* Sección de Características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 50px 0;
+}
+
+.features div {
+    text-align: center;
+    width: 30%;
+}
+
+.features div i {
+    font-size: 2em;
+    color: #f90;
+}
+
+.features h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+/* Tarjetas de Propiedades */
+.properties {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #111;
+}
+
+.property-card {
+    background-color: #222;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.property-card h4 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.property-card p {
+    color: #aaa;
+}
+
+.property-card .price {
+    color: #f90;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.property-card button {
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-card button:hover {
+    background-color: #ffb733;
+}
+
+/* Sección Blog y Testimonios */
+.blog-testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.blog, .testimonials {
+    width: 40%;
+}
+
+.testimonials {
+    background-color: #0a0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.testimonials p {
+    font-style: italic;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: #aaa;
+}
+
+footer p {
+    margin: 0;
+}
+
+.iconos-nosotros {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* para hacerlo responsivo*/
+    margin-top: 50px;
+}
+
+.icono {
+flex: 1;
+max-width: 30%;
+padding: 20px;
+box-sizing: border-box;
+text-align: center;
+}
+
+.icono img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.icono h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.icono p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .icono{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Contenedor principal de los anuncios */
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between; /* Distribuir anuncios con espacios iguales */
+    gap: 20px; /* Espacio entre cada anuncio */
+    flex-wrap: wrap; /* Permite que los anuncios se ajusten en pantallas pequeñas */
+    margin: 50px 0;
+}
+
+/* Estilo individual de cada anuncio */
+.anuncio {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-basis: calc(33.333% - 20px); /* Tamaño relativo para tres anuncios */
+    margin-bottom: 20px;
+}
+
+/* Imagen de cada propiedad */
+.anuncio img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #7e693a; /* Color de borde inferior debajo de la imagen */
+}
+
+/* Contenido de cada anuncio */
+.contenido-anuncio {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título de la propiedad */
+.contenido-anuncio h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción de la propiedad */
+.contenido-anuncio p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Precio de la propiedad */
+.contenido-anuncio .precio {
+    font-size: 1.25rem;
+    color: #ffb300; /* Color del precio */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Características de la propiedad (baños, estacionamiento, etc.) */
+.iconos-caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+    align-items: center;
+}
+
+.iconos-caracteristicas img {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Botón para ver la propiedad */
+.boton-amarillo-block {
+    display: block;
+    background-color: #ffb300;
+    color: rgb(14, 6, 6);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-amarillo-block:hover {
+    background-color: #be8500; /* Color al hacer hover en el botón */
+}
+
+.imagen-contacto {
+    background-image: url('build/img/encuentra.webp'); /* Cambia 'ruta_de_la_imagen_que_subiste.png' por la imagen correcta */
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.imagen-contacto h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.imagen-contacto p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.imagen-contacto a.boton-amarillo {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+}
+
+.imagen-contacto a.boton-amarillo:hover {
+    background-color: #e68a00;
+}
+
